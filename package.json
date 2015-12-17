@@ -1,6 +1,6 @@
 {
   "name": "proot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Resolve the root directory of the project",
   "license": "MIT",
   "author": {

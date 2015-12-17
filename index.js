@@ -25,7 +25,7 @@ var deps = sep + 'node_modules' + sep;
 function resolve (cwd) {
   var dirname = cwd ? process.cwd() : __dirname;
   var index = dirname.indexOf(deps);
-  var parts = (index === -1 ? dirname : dirname.slice(0, index)).split(sep);
+  var parts = (~index ? dirname.slice(0, index) : dirname).split(sep);
   var root;
 
   while (parts.length) {

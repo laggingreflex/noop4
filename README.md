@@ -18,13 +18,13 @@ $ npm install proot
   Resolve the root of the project relative to `__dirname`.
 
 ```javascript
-  var root = require('proot')();
+var root = require('proot')();
 ```
 
   Resolve the root of the project relative to `process.cwd()` (intended for CLIs).
 
 ```javascript
-  var root = require('proot')(true);
+var root = require('proot')(true);
 ```
 
 ## License

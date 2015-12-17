@@ -1,0 +1,20 @@
+{
+  "name": "proot",
+  "version": "0.2.0",
+  "description": "Resolve the root directory of the project",
+  "license": "MIT",
+  "author": {
+    "name": "Gabriele Di Stefano",
+    "email": "gabrieleds+node@gmail.com"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrieleds/proot.git"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "root",
+    "cwd"
+  ]
+}

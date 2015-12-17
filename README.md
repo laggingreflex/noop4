@@ -15,13 +15,13 @@ $ npm install proot
 
 ## Usage
 
-  Resolve the root of the project relative to `__dirname`.
+  Resolve the project's root directory relative to `__dirname`.
 
 ```javascript
 var root = require('proot')();
 ```
 
-  Resolve the root of the project relative to `process.cwd()` (intended for CLIs).
+  Resolve the project's root directory relative to `process.cwd()` (intended for CLIs).
 
 ```javascript
 var root = require('proot')(true);

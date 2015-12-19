@@ -1,7 +1,7 @@
 
-# proot
+# noop4
 
-  Resolve the root directory of the project.
+  No operation avoiding references.
 
   [![NPM Version][npm-image]][npm-url]
   [![NPM Downloads][downloads-image]][downloads-url]
@@ -10,30 +10,50 @@
 ## Install
 
 ```bash
-$ npm install proot
+$ npm install noop4
 ```
 
 ## Usage
 
-  Resolve the project's root directory relative to `__dirname`.
+  Nothing happens and no references are created.
 
 ```javascript
-var root = require('proot')();
+var noop = require('noop4');
+
+function example (fn) {
+  fn = fn || noop();
+  return fn('beep');
+}
+
+example();
+// nothing happened
 ```
 
-  Resolve the project's root directory relative to `process.cwd()` (intended for CLIs).
+## Why?
 
-```javascript
-var root = require('proot')(true);
-```
+  Sometimes the `noop` method is enriched with methods and properties.
+  To ensure a clean usage `noop4` creates a new function each time avoiding previous references.
+
+## See also
+- [noop1][noop1-url]
+- [noop2][noop2-url]
+- [noop3][noop3-url]
+- [nop][nop-url]
+- [no-op][no-op-url]
 
 ## License
 
 [MIT][license-url]
 
-[npm-image]: https://img.shields.io/npm/v/proot.svg?label=version&style=flat
-[npm-url]: https://npmjs.org/package/proot
-[downloads-image]: https://img.shields.io/npm/dm/proot.svg
-[downloads-url]: https://npmjs.org/package/proot
+[npm-image]: https://img.shields.io/npm/v/noop4.svg?label=version&style=flat
+[npm-url]: https://npmjs.org/package/noop4
+[downloads-image]: https://img.shields.io/npm/dm/noop4.svg
+[downloads-url]: https://npmjs.org/package/noop4
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: LICENSE
+
+[noop1-url]: https://www.npmjs.com/package/noop
+[noop2-url]: https://github.com/yoshuawuyts/noop2
+[noop3-url]: https://github.com/sindresorhus/noop3
+[nop-url]: https://github.com/supershabam/nop
+[no-op-url]: https://github.com/mattdesl/no-op

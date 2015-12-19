@@ -1,7 +1,7 @@
 {
-  "name": "proot",
-  "version": "1.1.0",
-  "description": "Resolve the root directory of the project",
+  "name": "noop4",
+  "version": "1.0.0",
+  "description": "No operation avoiding references",
   "license": "MIT",
   "author": {
     "name": "Gabriele Di Stefano",
@@ -10,11 +10,24 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gabrieleds/proot.git"
+    "url": "https://github.com/gabrieleds/noop4.git"
   },
   "main": "./index.js",
   "keywords": [
-    "root",
-    "cwd"
+    "noop",
+    "noop4",
+    "no-op",
+    "no",
+    "op",
+    "operation",
+    "no operation",
+    "util",
+    "empty",
+    "nothing",
+    "null",
+    "nil",
+    "function",
+    "func",
+    "fn"
   ]
 }

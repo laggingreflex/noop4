@@ -10,7 +10,7 @@
 ## Install
 
 ```bash
-$ npm install noop4
+$ npm install noop4 --save
 ```
 
 ## Usage

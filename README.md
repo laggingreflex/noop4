@@ -20,7 +20,7 @@ $ npm install noop4 --save
 ```javascript
 var noop = require('noop4');
 
-function example (fn) {
+function example(fn) {
   fn = fn || noop();
   return fn('beep');
 }

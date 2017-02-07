@@ -9,8 +9,8 @@
  * Module
  */
 
-function noop() {
-  return function() {};
+function noop () {
+  return function _noop () {};
 }
 
 /*
